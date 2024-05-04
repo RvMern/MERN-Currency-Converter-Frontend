@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const conversionAPI = async(conversionData) => {
-    const response = await axios.post('http://127.0.0.1:5000/api/v1/converter/currency-converter',conversionData,{
+    const response = await axios.post('https://mern-currency-converter-backend.onrender.com/api/v1/converter/currency-converter',conversionData,{
         headers:{
             'Content-Type':'application/json'
         }
